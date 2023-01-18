@@ -177,4 +177,7 @@ elif itemType == 8:     # Diagram
     print('=' * 20)
     for dLnk in item.DiagramLinks:          # Выборка всех коннекторов на диаграмме
         dConn = currentRep.GetConnectorByID(dLnk.ConnectorID)
-        print(f'Коннектор: ID-{dLnk.ConnectorID}  Название- {dConn.name}  Тип- {dConn.Type}')
+#        print(f'Коннектор: ID-{dLnk.ConnectorID}  Название- {dConn.name}  Тип- {dConn.Type}')
+        print(f'Коннектор: ID-{dLnk.ConnectorID}  Название- {dConn.name}  Тип- {dConn.Type}  Стереотип- {dConn.Stereotype}')
+#        print(f'Коннектор: ID-{dLnk.ConnectorID}  Название- {dConn.name}  Тип- {dConn.Type}  Стереотип- {dConn.Stereotype}  Source- {dConn.Source}  Target- {dConn.Target}')
+#        print(f'Коннектор: ID-{dLnk.ConnectorID}  Название- {dConn.name}  Тип- {dConn.Type}  Стереотип- {dConn.Stereotype}  Source- {dConn.source}')
